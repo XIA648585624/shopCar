@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>shopCar</display-name>
+  <!-- EndcodingFilter为编码过滤器 -->
+  <filter>
+  	<filter-name>EndcodingFilter</filter-name>
+  	<filter-class>henu.rjxy.xmh.filter.EndcodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EndcodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!--LoginFilter  -->
+    <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<filter-class>henu.rjxy.xmh.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>LoginFilter</filter-name>
+  	<url-pattern>/view/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- LoginServlet -->
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- QueryProductAction -->
+  <servlet>
+  	<servlet-name>QueryProductAction</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.QueryProductAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>QueryProductAction</servlet-name>
+  	<url-pattern>/view/QueryProductAction</url-pattern>
+  </servlet-mapping>
+  
+  <!--QueryJudgeServlet  -->
+  <servlet>
+  	<servlet-name>QueryJudgeServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.QueryJudgeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>QueryJudgeServlet</servlet-name>
+  	<url-pattern>/view/QueryJudgeServlet</url-pattern>
+  </servlet-mapping>  
+  
+  <!-- CreateUserActionServlet -->
+   <servlet>
+  	<servlet-name>CreateUserActionServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.CreateUserActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreateUserActionServlet</servlet-name>
+  	<url-pattern>/view/CreateUserActionServlet</url-pattern>
+  </servlet-mapping>
+  <!-- AlterPasswordServlet -->
+   <servlet>
+  	<servlet-name>AlterPasswordServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.AlterPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AlterPasswordServlet</servlet-name>
+  	<url-pattern>/view/AlterPasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--AlterUserInforServlet  -->
+  <servlet>
+  	<servlet-name>AlterUserInforServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.AlterUserInforServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AlterUserInforServlet</servlet-name>
+  	<url-pattern>/view/AlterUserInforServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!--ExitAction  -->
+  <servlet>
+  	<servlet-name>ExitAction</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.ExitAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ExitAction</servlet-name>
+  	<url-pattern>/view/ExitAction</url-pattern>
+  </servlet-mapping>
+  
+  <!-- AddCarActionServlet -->
+  <servlet>
+  	<servlet-name>AddCarActionServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.AddCarActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddCarActionServlet</servlet-name>
+  	<url-pattern>/view/AddCarActionServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- AlterCarAction -->
+   <servlet>
+  	<servlet-name>AlterCarAction</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.AlterCarAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AlterCarAction</servlet-name>
+  	<url-pattern>/view/AlterCarAction</url-pattern>
+  </servlet-mapping>
+  
+  <!--FindProductPageAction  -->
+   <servlet>
+  	<servlet-name>FindProductPageAction</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.FindProductPageAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FindProductPageAction</servlet-name>
+  	<url-pattern>/view/FindProductPageAction</url-pattern>
+  </servlet-mapping>  
+  
+  <!-- AlterCarActionForDelServlet -->
+   <servlet>
+  	<servlet-name>AlterCarActionForDelServlet</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.AlterCarActionForDelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AlterCarActionForDelServlet</servlet-name>
+  	<url-pattern>/view/AlterCarActionForDelServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- AlterCarForBackAction -->
+   <servlet>
+  	<servlet-name>AlterCarForBackAction</servlet-name>
+  	<servlet-class>henu.rjxy.xmh.servlet.AlterCarForBackAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AlterCarForBackAction</servlet-name>
+  	<url-pattern>/view/AlterCarForBackAction</url-pattern>
+  </servlet-mapping>
+</web-app>
